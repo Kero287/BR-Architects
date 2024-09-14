@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: 60px;
+}
+
+section h2 {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+/* Style Content */
+/* Header Start */
+header {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 8px 15px;
+    letter-spacing: 3px;
+}
+
+nav a span {
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+nav ul {
+    display: flex;
+}
+
+/* Header End */
+
+/* Home Start */
+.home {
+    height: 100vh;
+    background-image: url("images/architect.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    font-size: 35px;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.bc {
+    background-color: #333;
+    padding: 5px 10px;
+    font-weight: bold;
+    opacity: .9;
+}
+
+/* Home End */
+
+/* Projects Start */
+.projects .images {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.projects .images .image {
+    position: relative;
+}
+
+.projects .images .image p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.projects .images .image img {
+    width: 100%;
+}
+
+/* Projects End */
+
+/* About Start */
+.about .lorem {
+    padding: 20px 0 45px 0;
+    font-size: 15px;
+}
+
+.about .employees_about {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.about .employees_about .employee img {
+    width: 100%;
+}
+
+.about .employees_about .employee h3 {
+    font-weight: 400;
+    font-size: 23px;
+    padding: 10px 0 15px 0;
+    color: #444444;
+}
+
+.about .employees_about .employee .job_title {
+    padding-bottom: 15px;
+    color: #777;
+}
+
+.about .employees_about .employee .info_employee {
+    font-size: 16px;
+}
+
+.about .employees_about .employee button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.about .employees_about .employee button:hover {
+    background-color: #d8d8d8;
+}
+
+/* About End */
+
+/* contact start */
+.contact p {
+    padding: 15px 0;
+}
+
+.contact .input input {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-color: #ffffff 1px solid;
+}
+
+.contact button {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    margin: 25px 0;
+}
+
+.contact .map img {
+    width: 100%;
+}
+
+/* contact end */
+
+/* footer start */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+footer p {
+    display: block;
+    text-align: center
+}
+
+footer p a {
+    color: white;
+    text-decoration-line: underline;
+}
+
+footer p a:hover {
+    color: green;
+}
+
+
+/* footer end */
+
+
+/* Small screen (mobile) */
+@media (max-width: 600px) {
+
+    /* navbar in mobile & tablets */
+    nav ul {
+        display: none;
+    }
+
+    .home {
+        height: 50vh;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+
+
+/* Medium screen (tablets) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large screen (labtop) */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* X-Large screen (computer) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
